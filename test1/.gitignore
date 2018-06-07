@@ -1,0 +1,8 @@
+*.iml
+target
+build
+.idea/
+lab1/pom.xml
+lab1/src/main/java/com/spbstu/lab1/TestLab1.java
+lab1/src/test/java/com/spbstu/lab1/Test_Init.java
+lab1/src/test/java/com/spbstu/lab1/TestLab1.java
