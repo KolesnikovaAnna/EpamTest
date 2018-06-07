@@ -1,0 +1,2 @@
+webdriver.chrome.driver=${webdriver.chrome.driver}
+        homepage.url=https://jdi-framework.github.io/tests/index.htm
