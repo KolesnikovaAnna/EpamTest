@@ -1,5 +1,5 @@
 package com.spbstu.lab2;
-import org.junit.Test;
+//import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,7 +23,7 @@ public class Lab2 {
     @FindBy(css = ".benefit-icon")
     private List<WebElement> Pictures;
     @FindBy(css = ".benefit-txt")
-    private List<WebElement> Texts;
+    private List<WebElement> PicTexts;
     @FindBy(css = ".main-title")
     private WebElement MainHeader;
     @FindBy(css = ".main-txt")
@@ -70,7 +70,7 @@ public class Lab2 {
 
     public ArrayList<String> GetPictureTexts() {
         ArrayList<String> array = new ArrayList<>();
-        for (WebElement pictureText : Texts)
+        for (WebElement pictureText : PicTexts)
             array.add(pictureText.getText());
         return array;
     }
