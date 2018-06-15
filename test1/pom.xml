@@ -16,6 +16,9 @@
             <driver.path>C:\Users\X555La\Downloads\chromedriver_win32\chromedriver.exe</driver.path>
             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
             <homepage.url>https://jdi-framework.github.io/tests/index.htm</homepage.url>
+
+            <aspectj.version>1.8.5</aspectj.version>
+
         </properties>
 
 
@@ -35,6 +38,7 @@
                         <source>1.8</source>
                     </configuration>
                 </plugin>
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
@@ -44,6 +48,30 @@
                             <homepage.url>https://jdi-framework.github.io/tests/index.htm</homepage.url>
                         </systemPropertyVariables>
                     </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.20.1</version>
+
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>src\test\resources\testngSelenideParallel.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+
+                        <argLine>
+                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                        </argLine>
+                    </configuration>
+
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.aspectj</groupId>
+                            <artifactId>aspectjweaver</artifactId>
+                            <version>${aspectj.version}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
             </plugins>
         </build>
@@ -109,6 +137,41 @@
                 <artifactId>junit-jupiter-api</artifactId>
                 <version>5.0.0</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.epam.jdi</groupId>
+                <artifactId>jdi-uitest-web</artifactId>
+                <version>1.0.67</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ru.yandex.qatools.allure</groupId>
+                <artifactId>allure-testng-adaptor</artifactId>
+                <version>1.5.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
+
+            <dependency>
+                <artifactId>allure-maven-plugin</artifactId>
+                <groupId>ru.yandex.qatools.allure</groupId>
+                <version>2.5</version>
+            </dependency>
         </dependencies>
+
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>ru.yandex.qatools.allure</groupId>
+                <artifactId>allure-maven-plugin</artifactId>
+                <version>2.5</version>
+            </plugin>
+        </plugins>
+    </reporting>
     </project>
 
