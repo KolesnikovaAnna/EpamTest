@@ -1,6 +1,6 @@
 package com.spbstu.lab5;
 
-public class DataForMetalsColors {
+public enum DataForMetalsColors {
     CHECKBOX1("Water"), CHECKBOX2("Earth"), CHECKBOX3("Wind"), CHECKBOX4("Fire"),
     RADIO1("Gold"), RADIO2("Silver"), RADIO3("Bronze"), RADIO4("Selen"),
     DROPDOWN1("Red"), DROPDOWN2("Green"), DROPDOWN3("Blue"), DROPDOWN4("Yellow");

@@ -40,7 +40,7 @@ public class MetalsColors {
         Radios.shouldHaveSize(k);
         Colors.shouldBe(visible);
         InputButton.shouldBe(visible);
-        DefaultButton.shouldBe(visible);
+      //  DefaultButton.shouldBe(visible);
     }
 
     public void SelectCheckbox(String str) { // отметить в заданных полях
