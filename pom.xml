@@ -137,12 +137,6 @@
                 <scope>test</scope>
             </dependency>
 
-            <dependency>
-                <groupId>org.testng</groupId>
-                <artifactId>testng</artifactId>
-                <version>6.14.3</version>
-            </dependency>
-
 
             <dependency>
                 <groupId>org.aeonbits.owner</groupId>
@@ -181,12 +175,7 @@
                 <version>1.5.2</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.aeonbits.owner</groupId>
-                <artifactId>owner</artifactId>
-                <version>1.0.10</version>
-                <scope>test</scope>
-            </dependency>
+
 
 
 
@@ -201,17 +190,7 @@
                 <groupId>ru.yandex.qatools.allure</groupId>
                 <version>2.5</version>
             </dependency>
-            <dependency>
-                <groupId>org.aeonbits.owner</groupId>
-                <artifactId>owner</artifactId>
-                <version>1.0.10</version>
-            </dependency>
-            <dependency>
-                <groupId>org.aeonbits.owner</groupId>
-                <artifactId>owner</artifactId>
-                <version>1.0.10</version>
-            </dependency>
-        </dependencies>
+
 
     <reporting>
         <excludeDefaults>true</excludeDefaults>
