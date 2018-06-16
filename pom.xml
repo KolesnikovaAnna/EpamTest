@@ -18,9 +18,21 @@
         <aspectj.version>1.9.1</aspectj.version>
         <driver.path>C:\Users\X555La\Downloads\chromedriver_win32\chromedriver.exe</driver.path>
         <driver.folder>C:\</driver.folder>
+        <listener>ru.yandex.qatools.allure.testng.AllureTestListener</listener>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
+        </dependency>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
