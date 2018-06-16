@@ -106,13 +106,6 @@
             </dependency>
 
             <dependency>
-                <groupId>com.codeborne</groupId>
-                <artifactId>selenide</artifactId>
-                <version>4.11.1</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-chrome-driver</artifactId>
                 <version>3.11.0</version>
@@ -130,12 +123,6 @@
                 <version>3.11.0</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.aeonbits.owner</groupId>
-                <artifactId>owner</artifactId>
-                <version>1.0.6</version>
-                <scope>test</scope>
-            </dependency>
 
             <dependency>
                 <groupId>com.codeborne</groupId>
