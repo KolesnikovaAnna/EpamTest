@@ -3,8 +3,12 @@ import com.codeborne.selenide.Configuration;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Stories;
 
 @Listeners(Allure.class)
+@Features({"Testing"})
+@Stories({"the test"})
 public class TestLab4 {
     private static Lab4 TestPage;
     private static DEP DEPage;
