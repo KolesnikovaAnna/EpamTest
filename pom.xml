@@ -17,6 +17,8 @@
           <driver.path>C:\Users\X555La\Downloads\chromedriver_win32\chromedriver.exe</driver.path>
             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
             <homepage.url>https://jdi-framework.github.io/tests/index.htm</homepage.url>
+                   <listener>ru.yandex.qatools.allure.testng.AllureTestListener</listener>
+                   <aspectj.version>1.8.10</aspectj.version>
 
            <aspectj.version>1.8.5</aspectj.version>
         </properties>
