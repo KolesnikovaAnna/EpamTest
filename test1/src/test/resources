@@ -1,2 +1,0 @@
-webdriver.chrome.driver=${webdriver.chrome.driver}
-        homepage.url=${homepage.url}
