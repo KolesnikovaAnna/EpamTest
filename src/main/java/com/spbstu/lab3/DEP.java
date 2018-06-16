@@ -27,6 +27,7 @@ public class DEP {//Different Elements Page
 
     public DEP() {
         Selenide.page(this);
+        Selenide.zoom(0.5);
     }
 
     public void CheckAllElements(int n, int k) {//int num checkbox, num radio

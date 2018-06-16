@@ -39,6 +39,7 @@ public class Lab3 {
 
     public void Open(String site) {
         Selenide.open(site);
+        Selenide.zoom(0.5);
     }
 
     public void Close(){
