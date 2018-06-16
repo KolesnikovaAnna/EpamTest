@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Lab2" verbose="1">
+    <test name="test">
+        <classes>
+            <class name="com.spbstu.lab2.TestLab2">
+                <methods>
+                    <include name="Lab2"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
